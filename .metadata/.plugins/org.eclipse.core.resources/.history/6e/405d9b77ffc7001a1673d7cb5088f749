@@ -1,0 +1,23 @@
+package day01;
+
+import java.util.Date;
+
+public class Sample03 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int num = 99;
+		String name = new String("hello java");
+		
+		System.out.println(num);
+		System.out.println(name.toUpperCase());
+		
+		Date d = new Date();
+		
+		System.out.println(d);
+		
+		
+		
+	}
+
+}
