@@ -1,0 +1,13 @@
+package day02;
+
+public class Test07 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String name = "홍갈동";
+		int avg = 99;
+		char grade = 'A';
+		
+		System.out.printf("이름:%s, 점수:%d, 학점:%c %n", name, avg, grade);		
+	}
+}

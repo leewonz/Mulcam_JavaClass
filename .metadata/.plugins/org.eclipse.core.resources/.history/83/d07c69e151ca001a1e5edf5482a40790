@@ -1,0 +1,15 @@
+package day02;
+
+public class Test05 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		char c = 'a';
+		boolean flag = Character.isDigit(c);
+		System.out.printf("%c숫자여부? %b %n", c, flag);
+		
+		// 대문자 => 소문자
+		char chr = 'A';
+		System.out.printf("%c ==> ", chr);
+	}
+}

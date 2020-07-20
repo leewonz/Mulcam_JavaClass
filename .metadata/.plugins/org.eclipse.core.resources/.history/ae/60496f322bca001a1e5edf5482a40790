@@ -1,0 +1,17 @@
+package day02;
+
+public class Test01 {
+	 
+	
+	
+	public static void main(String[] args) {
+		int num = 1;
+		double doubleNum = 1.2;
+		System.out.println(num);
+		System.out.println((double)num);
+		System.out.println(new Double(num));
+		System.out.println(doubleNum);
+		System.out.println((int)doubleNum);
+		//System.out.println(new Integer(doubleNum));
+	}
+}

@@ -1,0 +1,13 @@
+package day02;
+
+public class Test03 {
+	public static void main(String[] args) {
+	
+		int x = 4, y = 1;
+		System.out.printf("%d", y++);
+		System.out.printf("%d", ++y);
+		System.out.printf("%d", y++);
+		System.out.printf("%d", ++y);
+		
+	}
+}
