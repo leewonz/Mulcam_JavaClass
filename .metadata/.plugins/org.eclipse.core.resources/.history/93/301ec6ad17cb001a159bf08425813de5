@@ -1,0 +1,14 @@
+package day03;
+
+import java.util.Arrays;
+
+public class Test03 {
+	public static void main(String[] args) {
+		//int[] num = new int[5];
+		int[] num = {76, 83, 68, 26, 89};
+		System.out.println(Arrays.toString(num));
+		for(int n : num) {
+			System.out.println(n);
+		}
+	}
+}
