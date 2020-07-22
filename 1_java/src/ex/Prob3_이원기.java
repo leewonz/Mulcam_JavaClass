@@ -25,6 +25,8 @@ public class Prob3_이원기 {
 		
 		int add = 3;
 		
+		StringBuilder sb = new StringBuilder();
+		
 		for(int i = 0; i < sourceString.length(); i++) {
 			char sourceChar = sourceString.charAt(i);
 			char encodedChar;
@@ -52,8 +54,12 @@ public class Prob3_이원기 {
 				encodedChar = sourceChar;
 			}*/
 			
-			encodedString += encodedChar;
+			sb.append(encodedChar);
+			
+			//encodedString += encodedChar;
 		}
+		
+		encodedString = sb.toString();
 		
 		System.out.println("암호화할 문자열 : " + sourceString);
 		System.out.println("암호화된 문자열 : " + encodedString);
