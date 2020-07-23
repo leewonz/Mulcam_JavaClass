@@ -1,0 +1,19 @@
+package day05;
+
+public class Test05 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Animal[] animals = {
+				new Dog("진돗개", "쫑쫑"),
+				new Fish("쿠쿠"),
+				new Dog("시츄","시시")
+		};
+		
+		for(Animal a : animals) {
+			a.breath();
+			a.print();
+		}
+	}
+
+}

@@ -1,0 +1,16 @@
+package ex;
+
+public class Employee extends Person {
+	private String dept;
+
+	public Employee(String dept) {
+		super();
+		this.dept = dept;
+	}
+	
+	@Override
+	public void print() {
+		System.out.printf("이    름 : %s    나    이 : %d    부    서 : %s",
+						  name, age, dept);
+	}
+}
