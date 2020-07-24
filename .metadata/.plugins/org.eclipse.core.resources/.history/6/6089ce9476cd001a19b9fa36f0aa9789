@@ -1,0 +1,33 @@
+package day06.exception;
+
+public class Test01 {
+
+	public static void main(String[] args) {
+		System.out.println("Start");
+		
+		String num = "-20";
+		try {
+			System.out.println("1 자원 사용");
+			System.out.println(20/Integer.parseInt(num));
+			int[] s = new int[Integer.parseInt(num)];
+		}catch(NumberFormatException e){
+			System.out.println(e.getMessage());
+			e.printStackTrace();
+			System.out.println("데이터 입력 에러");
+			System.out.println("정수 숫자만 입력하세요");
+			System.out.println("입력예)4");
+		}catch(ArithmeticException e) {
+			System.out.println("0 은 X");
+		}finally{
+			System.out.println("2 자원 밥ㄴㄴ");
+		}
+		
+		System.out.println(20/Integer.parseInt(num));
+		
+		System.out.println("");
+		
+		System.out.println("End");
+
+	}
+
+}

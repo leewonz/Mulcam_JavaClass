@@ -1,0 +1,27 @@
+package day06.exception;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class Test04 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("start");
+		
+		Scanner scanner = null;
+		
+		try {
+			scanner = new Scanner(new File("input/data1.txt"));
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			System.out.println("데이터 파일 확인해주세요...;;");
+		}finally {
+			
+		}
+		
+		System.out.println("end");
+	}
+
+}

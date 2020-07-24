@@ -1,0 +1,19 @@
+package day06;
+
+import day06.tv.LTV;
+import day06.tv.STV;
+import day06.tv.TV;
+
+public class Test01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		TV user = new LTV();
+		user.powerOn();
+		
+		user = new STV();
+		user.powerOn();
+		
+	}
+	
+}

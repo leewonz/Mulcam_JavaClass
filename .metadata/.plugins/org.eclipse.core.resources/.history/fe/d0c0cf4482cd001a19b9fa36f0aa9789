@@ -1,0 +1,5 @@
+package day06.exception;
+
+public class MoneyException extends Exception {
+
+}

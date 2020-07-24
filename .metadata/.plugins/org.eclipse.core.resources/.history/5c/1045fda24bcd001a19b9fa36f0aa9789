@@ -1,0 +1,7 @@
+package day06.tv;
+
+public class STV {
+	public void powerOn() {
+		System.out.println("STV Power On");
+	}
+}
