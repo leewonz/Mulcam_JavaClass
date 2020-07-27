@@ -1,0 +1,4 @@
+driver=oracleDriver
+url=jdbc:oracle
+user=hr
+pw=hr
