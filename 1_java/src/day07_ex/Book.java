@@ -1,6 +1,8 @@
 package day07_ex;
 
-public class Book implements Comparable<Book>{
+import java.io.Serializable;
+
+public class Book implements Comparable<Book>, Serializable{
 	private String title;
 	private int price;
 	
@@ -18,6 +20,10 @@ public class Book implements Comparable<Book>{
 	
 	public void setPrice(int price) {
 		this.price = price;
+	}
+	
+	public Book() {
+		super();
 	}
 	
 	public Book(String title, int price) {

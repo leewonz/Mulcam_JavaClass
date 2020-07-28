@@ -12,7 +12,15 @@ public class BookMgr {
 		bookList = new ArrayList<Book>();
 	}
 	
-	public void add(Book book) {
+	public BookMgr(List<Book> bookList) {
+		this.bookList = bookList;
+	}
+	
+	public void setBookList(List<Book> bookList) {
+		this.bookList = bookList;
+	}
+	
+	public void addBook(Book book) {
 		bookList.add(book);
 	}
 	
@@ -37,15 +45,33 @@ public class BookMgr {
 		return flag;
 	}
 	
-	public boolean search(String title) {
+	public boolean searchTitle(String title) {
 		Iterator<Book> ib = bookList.iterator();
 		boolean flag = false;
 		if (ib != null) {
 			while(ib.hasNext()) {
 				Book cBook = ib.next();
-				if(cBook.equals(new Book(title, 0))) {
+				if(cBook.getTitle().toUpperCase().contains(
+						title.toUpperCase())) {
 					flag = true;
 					System.out.println(cBook.toString());
+				}
+			}
+		}
+		return flag;
+	}
+	
+	public boolean checkTitle(String title) {
+		Iterator<Book> ib = bookList.iterator();
+		boolean flag = false;
+		if (ib != null) {
+			while(ib.hasNext()) {
+				Book cBook = ib.next();
+				if(cBook.getTitle().toUpperCase().equals(
+						title.toUpperCase())) {
+					flag = true;
+					System.out.println(cBook.toString());
+					break;
 				}
 			}
 		}
@@ -68,5 +94,10 @@ public class BookMgr {
 		return sb.toString();
 	}
 	
+	public void bookListPrint() {
+		System.out.println("======booklist======");
+		bookList.forEach(i -> System.out.println(i));
+		System.out.println("====================");
+	}
 	
 }

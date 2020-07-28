@@ -61,7 +61,7 @@ public class BookApp {
 	
 	private void showList() {
 		System.out.println();
-		System.out.println(bookMgr.toString());
+		bookMgr.bookListPrint();
 		waitForInput();
 	}
 	
@@ -69,7 +69,7 @@ public class BookApp {
 		System.out.println();
 		System.out.print("검색할 책의 제목: ");
 		String str = in.nextLine();
-		if (!bookMgr.search(str)) {
+		if (!bookMgr.searchTitle(str)) {
 			System.out.println("검색 결과가 없습니다.");
 		}
 		waitForInput();
@@ -83,7 +83,7 @@ public class BookApp {
 		System.out.print("추가할 책의 가격: ");
 		String strPrice = in.nextLine();
 		
-		bookMgr.add(new Book(strTitle, Integer.parseInt(strPrice)));
+		bookMgr.addBook(new Book(strTitle, Integer.parseInt(strPrice)));
 		waitForInput();
 	}
 	
@@ -102,7 +102,7 @@ public class BookApp {
 		System.out.print("변경할 책의 제목: ");
 		String strOldTitle = in.nextLine();
 		
-		if (!bookMgr.search(strOldTitle)) {
+		if (!bookMgr.checkTitle(strOldTitle)) {
 			System.out.println("해당 제목의 책이 없습니다.");
 		} else {
 			System.out.print("새로운 책의 제목: ");

@@ -3,6 +3,7 @@ package day07;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.function.BiConsumer;
 
 public class Test06_Map {
 
@@ -33,6 +34,16 @@ public class Test06_Map {
 			}
 			System.out.println("로그인 실패...");
 		}
+		
+		map.forEach(new BiConsumer<String, String>() {
+
+			@Override
+			public void accept(String t, String u) {
+				System.out.printf("%s%s | ",t, u);
+				
+			}
+			
+		});
 	}
 
 }
