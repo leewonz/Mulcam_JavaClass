@@ -2,9 +2,11 @@ package util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.List;
 
 public class JDBCUtil {
 	
@@ -44,5 +46,18 @@ public class JDBCUtil {
 		} catch(SQLException e) {
 			e.printStackTrace();
 		}
+	}
+	
+	public static void setList(
+			PreparedStatement ps, List<Object> args) {
+		int index = 1;
+		args.forEach(i ->{
+			try {
+				if(i instanceof Integer) { ps.setInt(index, (Integer)i);}
+				else if(i instanceof String) { ps.setString(index, (String)i);}
+			}catch(SQLException e) {
+				e.printStackTrace();
+			}
+		});
 	}
 }

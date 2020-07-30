@@ -8,6 +8,7 @@
 		<item key="isRegEx" value="false"/>
 		<item key="selection" value="close()"/>
 		<list key="findhistory">
+			<item value="System.out.println(&quot;- 메뉴 번호를 입력하세요 -&quot;);"/>
 			<item value="close()"/>
 			<item value="close"/>
 		</list>
