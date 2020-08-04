@@ -1,7 +1,0 @@
-package day06.tv;
-
-public class LTV {
-	public void powerOn() {
-		System.out.println("LTV Power On");
-	}
-}
