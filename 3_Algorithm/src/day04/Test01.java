@@ -15,7 +15,7 @@ public class Test01 {
 	
 	public static void main(String[] args) throws Exception{
 		// TODO Auto-generated method stub
-		System.setIn(new FileInputStream("src/input/p70.txt"));
+		System.setIn(new FileInputStream("input/p70.txt"));
 		BufferedReader in = 
 				new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(in.readLine());

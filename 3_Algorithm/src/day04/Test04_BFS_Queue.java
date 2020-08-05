@@ -17,10 +17,11 @@ public class Test04_BFS_Queue {
 	static int count;
 	
 	public static void main(String[] args) throws FileNotFoundException {
-		Scanner in = new Scanner(new FileInputStream("src/input/p71.txt"));
+		Scanner in = new Scanner(new FileInputStream("input/p71.txt"));
 		
 		N = in.nextInt();
 		G = new int[N][N];
+		V = new boolean[N];
 		
 		count = in.nextInt();
 		
@@ -46,7 +47,7 @@ public class Test04_BFS_Queue {
 		queue.offer(node);
 		while(!queue.isEmpty()) {
 			int num = queue.poll();
-			System.out.println(num);
+			System.out.printf("%d, ", num);
 			for(int i = 0; i < N; i++) {
 				if ((G[num][i] == 1) && (!V[i])) {
 					queue.offer(i);

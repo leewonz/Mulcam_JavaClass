@@ -2,7 +2,7 @@ command=C\:\\Java\\java-1.8.0-openjdk\\bin\\javadoc.exe
 content_assist_completion_replacement_background=200,200,0
 content_assist_completion_replacement_foreground=200,0,0
 content_assist_disabled_computers=org.eclipse.jdt.ui.textProposalCategory\u0000org.eclipse.jdt.ui.javaPostfixProposalCategory\u0000org.eclipse.jdt.ui.javaAllProposalCategory\u0000org.eclipse.jdt.ui.javaTypeProposalCategory\u0000org.eclipse.jdt.ui.javaNoTypeProposalCategory\u0000org.eclipse.jdt.ui.javaChainProposalCategory\u0000
-content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="vo.DeptVo"><rhs name\="vo.DeptVo"/></lhs><lhs name\="java.lang.Number"><rhs name\="java.lang.Integer"/></lhs><lhs name\="day02.MyStack"><rhs name\="day02.MyStack"/></lhs></history>
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="vo.DeptVo"><rhs name\="vo.DeptVo"/></lhs><lhs name\="java.lang.Number"><rhs name\="java.lang.Integer"/></lhs><lhs name\="day02.MyStack"><rhs name\="day02.MyStack"/></lhs><lhs name\="java.io.Closeable"><rhs name\="java.io.FileInputStream"/></lhs><lhs name\="java.lang.AutoCloseable"><rhs name\="java.io.FileInputStream"/></lhs><lhs name\="java.io.InputStream"><rhs name\="java.io.FileInputStream"/></lhs><lhs name\="java.util.Enumeration"><rhs name\="java.util.StringTokenizer"/></lhs><lhs name\="java.util.StringTokenizer"><rhs name\="java.util.StringTokenizer"/></lhs></history>
 content_assist_number_of_computers=23
 content_assist_parameters_background=52,57,61
 content_assist_parameters_foreground=238,238,238

@@ -6,13 +6,15 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="close()"/>
+		<item key="selection" value="input"/>
 		<list key="findhistory">
+			<item value="src/input"/>
 			<item value="System.out.println(&quot;- 메뉴 번호를 입력하세요 -&quot;);"/>
 			<item value="close()"/>
 			<item value="close"/>
 		</list>
 		<list key="replacehistory">
+			<item value="input"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

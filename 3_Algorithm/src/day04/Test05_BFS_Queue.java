@@ -5,9 +5,11 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
 
-public class Test02 {
+public class Test05_BFS_Queue {
 
 	static int[][] G;
 	static boolean[] V;
@@ -31,21 +33,32 @@ public class Test02 {
 		}
 		
 		print(G);
-		dfs_recursive(0);
-	}
-	private static void dfs_recursive(int node) {
-		for(int i = 0; i < G[node].length; i++) {
-			if (G[node][i] == 1 && !V[i]) {
-				System.out.printf("%d, ",i);
-				V[i] = true;
-				dfs_recursive(i);
-			}
-		}
+		//bfs(0);
 	}
 	static void print(int[][] G) {
 		for(int i = 0; i < G.length; i++) {
 			System.out.println(Arrays.toString(G[i]));
 		}
 	}
-
+	
+	
+	static Queue<Integer> queue = new LinkedList<Integer>();
+	private static void bfs(int x, int y, int no) {
+		Queue<int[]> queue = new LinkedList<int[]>();
+		G[x][y] = no;
+		queue.offer(new int[] {x, y});
+		
+		while(!queue.isEmpty()) {
+			int[] cur = queue.poll();
+//			for(int i = 0; i < dx.length; i++) {
+//				int newx = cur[0]+dx[i]
+//			}
+		}
+	}
+	
 }
+
+
+
+
+

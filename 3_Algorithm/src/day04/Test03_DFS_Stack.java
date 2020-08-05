@@ -15,7 +15,7 @@ public class Test03_DFS_Stack {
 	static int count;
 	
 	public static void main(String[] args) throws FileNotFoundException {
-		Scanner in = new Scanner(new FileInputStream("src/input/p71.txt"));
+		Scanner in = new Scanner(new FileInputStream("input/p71.txt"));
 		
 		N = in.nextInt();
 		G = new int[N][N];

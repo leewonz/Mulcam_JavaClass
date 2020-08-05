@@ -14,8 +14,8 @@ public class DDG {
 	static int N;
 	
 	public static void main(String[] args) throws FileNotFoundException {
-		Scanner in = new Scanner(new FileInputStream("src/input/DDG.txt"));
-		//Scanner in = new Scanner(System.in);
+		//Scanner in = new Scanner(new FileInputStream("input/DDG.txt"));
+		Scanner in = new Scanner(System.in);
 		N = in.nextInt();
 		board = new int[N][N];
 		checked = new boolean[N][N];

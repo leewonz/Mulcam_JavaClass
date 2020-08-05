@@ -1,12 +1,14 @@
 package ex.algorithm;
 
 import java.util.ArrayList;
+
 import java.util.Arrays;
 
 import util.Util;
 import util.Sort;
+import util.Search;
 
-public class Test02 {
+public class Test_BinSearch {
 	public static void main(String[] args) {
 
 		final int len = 10;
@@ -22,22 +24,19 @@ public class Test02 {
 
 		Sort.selectionSort(arr);
 		
-
 		for (int i = 0; i < arr.length; i++) {
 			System.out.printf("%d ", arr[i]);
 		}
 		System.out.println();
 		
-		System.out.printf("%d가 %d에 있다", target, binSearch(arr, 0, arr.length - 1, 10));
+		int res = Search.binSearch(arr, 0, arr.length - 1, 10);
+		if (res == -1) {
+			System.out.printf("%d은(는) 없다!", target);
+		} else {
+			System.out.printf("%d이(가) %d에 있다.", target, res);
+		}
+
 		System.out.println();
 
-	}
-
-	private static int binSearch(int[] arr, int left, int right, int key) {
-		if (left > right) {return -1;}
-		int idx = (left + right) / 2;
-		if(arr[idx] == key) {return idx;}
-		else if (arr[idx] < key) {return binSearch(arr, idx + 1, right, key);}
-		else {return binSearch(arr, left, idx - 1, key);}
 	}
 }
